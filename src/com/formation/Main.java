@@ -1,11 +1,12 @@
 package com.formation;
 
 public class Main {
-
+//
     public static void main(String [] args) {
 /////////////////////////////////////////////////////////////
         int[] tab = {2, -2, 99, 88, 7, 13, 12, 10, 18, 22};//correction
         System.out.println(isPrime(7));
+        getPrimeNumbers(tab);
 
     }
         public static boolean isPrime(int n){
@@ -25,7 +26,7 @@ public class Main {
 
 
 
-        public static int getPrimeNumbers(int[] tab){
+        public static int[] getPrimeNumbers(int[] tab){
             int[] result = new int[tab.length];
             int index = 0;
             for(int i : tab){
@@ -34,6 +35,11 @@ public class Main {
                     index++;
                  }
             }
+
+            for (int i = 0; i < result.length; i++) {
+                System.out.println(result[i]);
+            }
+
             return result;
         }
 
