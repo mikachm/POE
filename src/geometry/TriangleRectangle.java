@@ -24,6 +24,6 @@ public class TriangleRectangle extends Rectangle {
 
     public double getHypotenus(){
 
-        double hypotenus = square(getLongueur())
+        double hypotenus = Maths.sqrt((super.getLongueur())^2 +super.getLargeur()^2);
     }
 }
